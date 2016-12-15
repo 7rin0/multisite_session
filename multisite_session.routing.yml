@@ -1,0 +1,7 @@
+multisite_session.default.routing:
+  path: '/admin/config/multisite_session/administration'
+  defaults:
+    _title: 'Multisite Session - Administration'
+    _controller: '\Drupal\multisite_session\Controller\MultisiteSessionController::indexAction'
+  requirements:
+    _permission: 'administer'
