@@ -14,7 +14,12 @@ class MultisiteSessionController extends ControllerBase {
    * Multisite Session Main Action.
    */
   public function indexAction(Request $request) {
-    return 'Multisite Session Administration Page';
+    $build = [
+      'type' => 'html',
+      '#markup' => 'Multisite Session Administration Page',
+    ];
+
+    return $build;
   }
 
 }
